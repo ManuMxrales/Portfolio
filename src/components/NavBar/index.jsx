@@ -13,20 +13,20 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Fab from "@mui/material/Fab";
 import AppsIcon from "@mui/icons-material/Apps";
 import HomeIcon from "@mui/icons-material/Home";
-import CollectionsIcon from "@mui/icons-material/Collections";
-import PersonIcon from "@mui/icons-material/Person";
+import BuildIcon from "@mui/icons-material/Build";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import GroupsIcon from "@mui/icons-material/Groups";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
+import WorkIcon from "@mui/icons-material/Work";
 
 function NavBar() {
   const [toggle, setToggle] = useState(false);
 
   const navbarButtons = [
     { name: "Home", url: "/" },
-    { name: "Skills", url: "/Galeria" },
-    { name: "Proyects", url: "/Servicios" },
-    { name: "Contact", url: "/Nosotros" },
+    { name: "Skills", url: "/Skills" },
+    { name: "Projects", url: "/Projects" },
+    { name: "Contact", url: "/Contact" },
     { name: "TBD", url: "/Contacto" },
   ];
   return (
@@ -126,7 +126,7 @@ function NavBar() {
                 flexDirection: "column",
               }}
             >
-              <Link to="/Galeria" style={{ textDecoration: "none" }}>
+              <Link to="/Skills" style={{ textDecoration: "none" }}>
                 <IconButton
                   onClick={() => setToggle(!toggle)}
                   sx={{
@@ -135,9 +135,9 @@ function NavBar() {
                     flexDirection: "column",
                   }}
                 >
-                  <CollectionsIcon fontSize="large" />
+                  <BuildIcon fontSize="large" />
                   <Typography variant="body" m={"5px"} color="white">
-                    Galería
+                    Skills
                   </Typography>
                 </IconButton>
               </Link>
@@ -151,7 +151,7 @@ function NavBar() {
                 flexDirection: "column",
               }}
             >
-              <Link to="/Servicios" style={{ textDecoration: "none" }}>
+              <Link to="/Projects" style={{ textDecoration: "none" }}>
                 <IconButton
                   onClick={() => setToggle(!toggle)}
                   sx={{
@@ -160,9 +160,9 @@ function NavBar() {
                     flexDirection: "column",
                   }}
                 >
-                  <HomeRepairServiceIcon fontSize="large" />
+                  <WorkIcon fontSize="large" />
                   <Typography variant="body" m={"5px"} color="white">
-                    Servicios
+                    Projects
                   </Typography>
                 </IconButton>
               </Link>
@@ -212,7 +212,7 @@ function NavBar() {
                     boxShadow: "none",
                   }}
                 >
-                  <PersonIcon fontSize="large" />
+                  <AlternateEmailIcon fontSize="large" />
                   <Typography variant="body" m={"5px"} color="white">
                     Contacto
                   </Typography>

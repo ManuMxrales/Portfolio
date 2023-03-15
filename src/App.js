@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-// import Gallery from "./components/Gallery";
+import Skills from "./components/Skills";
 // import ItemDetail from "./components/ItemDetail";
 // import Services from "./components/Servicios";
 // import About from "./components/About";
@@ -23,6 +23,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/Skills" element={<Skills />} />
             {/* <Route exact path="/Galeria" element={<Gallery />} />
             <Route path="/Galeria/:id" element={ <ItemDetail /> } />
             <Route exact path="/Servicios" element={<Services />} />
