@@ -7,7 +7,6 @@ import {
   IconButton,
   AppBar,
   Toolbar,
-  Button,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import Fab from "@mui/material/Fab";
@@ -49,7 +48,11 @@ function NavBar() {
           }}
         >
           {navbarButtons.map((text) => (
-            <Button key={text.name} href={text.url}>
+            <Link
+              to={text.url}
+              key={text.name}
+              style={{ textDecoration: "none" }}
+            >
               <Typography
                 key={text.name}
                 variant="h6"
@@ -58,7 +61,7 @@ function NavBar() {
               >
                 {text.name}
               </Typography>
-            </Button>
+            </Link>
           ))}
         </Toolbar>
       </AppBar>
