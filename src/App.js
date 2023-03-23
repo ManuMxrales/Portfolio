@@ -4,10 +4,9 @@ import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
-// import ItemDetail from "./components/ItemDetail";
-// import Services from "./components/Servicios";
-// import About from "./components/About";
-// import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import WorkExperience from "./components/WorkExperience";
+
 
 function App() {
   const theme = createTheme({
@@ -24,6 +23,8 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/Skills" element={<Skills />} />
+            <Route exact path="/Projects" element={<Projects />} />
+            <Route exact path="/workExperience" element={<WorkExperience />} />
             {/* <Route exact path="/Galeria" element={<Gallery />} />
             <Route path="/Galeria/:id" element={ <ItemDetail /> } />
             <Route exact path="/Servicios" element={<Services />} />
