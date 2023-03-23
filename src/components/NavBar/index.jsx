@@ -25,8 +25,8 @@ function NavBar() {
     { name: "Home", url: "/" },
     { name: "Skills", url: "/Skills" },
     { name: "Projects", url: "/Projects" },
+    { name: "Work Experience", url: "/workExperience" },
     { name: "Contact", url: "/Contact" },
-    { name: "TBD", url: "/Contacto" },
   ];
   return (
     <React.Fragment>
@@ -179,7 +179,7 @@ function NavBar() {
                 flexDirection: "column",
               }}
             >
-              <Link to="/Nosotros" style={{ textDecoration: "none" }}>
+              <Link to="/workExperience" style={{ textDecoration: "none" }}>
                 <IconButton
                   onClick={() => setToggle(!toggle)}
                   sx={{
@@ -190,7 +190,7 @@ function NavBar() {
                 >
                   <GroupsIcon fontSize="large" />
                   <Typography variant="body" m={"5px"} color="white">
-                    Nosotros
+                    Work Experience
                   </Typography>
                 </IconButton>
               </Link>
